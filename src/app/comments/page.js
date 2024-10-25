@@ -61,7 +61,7 @@ const CommentsPage = () => {
   };
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md" sx={{ mt: 8}}>
       <Typography variant="h4" gutterBottom>Comments</Typography>
       <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
         <Typography variant="h6" color="secondary">Welcome, {username}!</Typography>
@@ -87,7 +87,7 @@ const CommentsPage = () => {
         variant="contained"
         color="primary"
         fullWidth
-        style={{ marginTop: '20px' }}
+        style={{ marginTop: '20px' , width: 'auto'}}
         onClick={handlePostComment}
       >
         Post Comment
